@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="fr">
+    <head>
+        <title>Projet Dev Web - Mickaël</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="include/style.css">
+      
+        <script>
+            // Permet de changer l'etat d'un block lors d'un click sur nimporte quelle balise //
+            function changeEtatBlock(block, etat)
+            {
+                document.getElementById(block).style.display = 'none';
+                if (etat)
+                {
+                    document.getElementById(block).style.display = 'block';
+                }
+            }
+        </script>
+    </head>

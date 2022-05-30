@@ -1,0 +1,339 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 avr. 2017, 23:32:38
+    Author     : Mickaël
+*/
+
+html{
+    font-family:helvetica;
+    margin : 0 10%;
+    background-color: #ebebeb;
+}
+
+a, li {
+    margin-top:20px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+header{
+    text-align: center;
+}
+.nav ul {
+    height:10em;
+    max-width: 1240px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.nav li span {
+    display: block;
+}
+
+.nav a {
+    display: block;
+    color: rgba(249, 249, 249, .9);
+    text-decoration: none;
+    -webkit-transition: color .5s, background .5s, height .5s;
+    -moz-transition: color .5s, background .5s, height .5s;
+    -o-transition: color .5s, background .5s, height .5s;
+    -ms-transition: color .5s, background .5s, height .5s;
+    transition: color .5s, background .5s, height .5s;
+}
+
+.nav i{
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* On met différentes couleur pour les backgrounds */
+
+.nav li:nth-child(6n+1) {
+    background: rgb(208, 101, 3);
+}
+
+.nav li:nth-child(6n+2) {
+    background: rgb(233, 147, 26);
+}
+
+.nav li:nth-child(6n+3) {
+    background: rgb(22, 145, 190);
+}
+
+.nav li:nth-child(6n+4) {
+    background: rgb(22, 107, 162);
+}
+
+.nav li:nth-child(6n+5) {
+    background: rgb(27, 54, 71);
+}
+
+.nav li:nth-child(6n+6) {
+    background: rgb(21, 40, 54);
+}
+
+/* On met la liste horizontal */
+.nav li {
+    display: inline-block;
+    width: 16.66666666666667%;
+    text-align: center;
+    -webkit-transition: border .5s;
+    -moz-transition: border .5s;
+    -o-transition: border .5s;
+    -ms-transition: border .5s;
+    transition: border .5s;
+
+}
+
+.nav a {
+    display: block;
+    width: auto;
+}
+
+
+/* on place les icons */
+
+.icon {
+    padding-top: 1.4em;
+}
+
+.icon + span {
+    margin-top: 1em;
+    -webkit-transition: margin .5s;
+    -moz-transition: margin .5s;
+    -o-transition: margin .5s;
+    -ms-transition: margin .5s;
+    transition: margin .5s;
+}
+
+.nav a {
+    height: 8em;
+    box-shadow: 8px 8px 12px #aaa;
+
+}
+
+/* lors d'un hover ou un active on augmente de 10em la hauteur du bloc sur lequel on a cliquer */
+.nav a:hover ,
+.nav a:active ,
+.nav a:focus{
+    height: 9em;
+}	
+
+
+
+/* Pour positionnier les icones et faire les animations*/
+.nav i {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.4em;
+    border-radius: 50%;
+    font-size: 1.8em;
+    box-shadow: 0 0 0 30px transparent;
+    background: rgba(255,255,255,0.1);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: box-shadow .6s ease-in-out;
+    -moz-transition: box-shadow .6s ease-in-out;
+    -o-transition: box-shadow .6s ease-in-out;
+    -ms-transition: box-shadow .6s ease-in-out;
+    transition: box-shadow .6s ease-in-out;
+}	
+
+/* Fin nav */
+.nav{
+    margin-bottom: 40px;
+}
+.cacher{
+    display:none;
+}
+.principal{
+    width: 70%;
+    text-align: justify;
+    display: inline-block;
+    box-shadow: 8px 8px 12px #aaa;
+    border-radius: 10px;
+}
+.principal article{
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 2% 10% 2% 0%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #394959;
+    color:white;
+    height: auto;
+    width: 85%;
+
+}
+.footer{
+    background-color: #607890;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-lat{
+    width: 29%;
+    float:right;
+    text-align: center;
+    box-shadow: 8px 1px 12px 1px #aaa;
+}
+.menu-lat .recherche{
+    border-radius: 5px;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.2);
+    background-color: white;
+    margin: 10px 10px;
+}
+.block-top{
+    padding-top:20px;
+    padding-bottom:10px;
+}
+.block-bottom .button{
+    color: #e51356;
+    background-color: white;
+    border: 1px solid #e51356;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    margin-bottom:30px;
+}
+
+.button-savoir-plus{
+    border: 2px solid green;
+    background-color:white;
+    padding: 5px;
+    border-radius : 5px;
+    color:green;
+    text-decoration:none;
+    margin-left: 63%;
+}
+.button-savoir-plus:hover{
+    background-color:green;
+    color: white;
+    text-decoration:none;
+}
+.block-bottom{
+    height: auto;
+    padding-bottom: 30px;
+}
+.block-bottom .button:hover{
+    background-color: #e51356;
+    color: white;
+    transition: 0.5s;
+}
+.button{
+    color: #394959;
+    background-color: white;
+    border: 1px solid rgba(57, 73, 89, 0.75);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+.button:hover{
+    color: white;
+    background-color: rgba(57, 73, 89, 0.75);
+}
+.button p{
+    font-size: 18px;
+}
+.button p:first-letter{
+    color: #09F;
+}
+h4{
+    background-color : #09F;
+    color : white;
+    margin-top: 0px;
+    text-align:center;
+    line-height: 3em;
+    text-transform: uppercase;
+}
+li h4{
+    background-color : rgba(57, 73, 89, 0.75);
+    color : white;
+    margin-top: 0px;
+    text-align:center;
+    line-height: 3em;
+    text-transform: uppercase;
+}
+.nom-etablissement{
+    text-align:center;
+}
+.pagination{
+    text-align: center;
+    width:auto;
+    margin:5px;
+}
+.pagination a{
+    border: 1px solid blue;
+    background-color: blue;
+    padding : 2px;
+    text-decoration: none;
+    color:white;
+}
+.pagination a:hover
+{
+    color:#09F;
+}
+
+.form input[type="text"]{
+    margin-bottom:10px;
+    border-radius: 5px;
+    height: 31px;
+
+}
+.liste-recherche{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.liste-recherche li,
+.liste-recherche li [type="text"]{
+    width:300px;
+    margin-right: 30px !important;
+}
+.principal ul li{
+    margin: 0;
+}
+.scroll{
+    overflow:scroll;
+    height:500px;
+}
+form .button{
+    margin: auto;
+    display: block;
+}
+.cacher{
+    display : none;
+}
+.block-full{
+    width:90% !important;
+    padding:10px;
+    text-align: center;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.2);
+}
+.block-full-sans-ombre{
+    width:90% !important;
+    padding:10px;
+    text-align: center;
+}
+.block-full-sans-ombre p:first-letter{
+    color: #09F;
+}
