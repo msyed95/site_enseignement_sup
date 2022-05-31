@@ -1,9 +1,9 @@
 <?php
-session_start();
+//session_start();
 
 //Appel des classes avec l'autoload
 function chargerClasse($classe) {
-    require '/classe/' . $classe . '.php';
+    require './classe/' . $classe . '.php';
 }
 
 spl_autoload_register('chargerClasse');
