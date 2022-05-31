@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once('include/head.html');
 /* 
  * To change this license header, choose License Headers in Project Properties.
